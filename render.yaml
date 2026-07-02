@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: foodmeta-backend
+    runtime: node
+    plan: free
+    region: frankfurt
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_VISION_MODEL
+        value: meta-llama/llama-4-scout-17b-16e-instruct
+      - key: APP_API_KEY
+        sync: false
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "20"
