@@ -12,7 +12,7 @@ services:
       - key: GROQ_API_KEY
         sync: false
       - key: GROQ_VISION_MODEL
-        value: meta-llama/llama-4-scout-17b-16e-instruct
+        value: openai/gpt-oss-120b
       - key: APP_API_KEY
         sync: false
       - key: RATE_LIMIT_PER_MINUTE
