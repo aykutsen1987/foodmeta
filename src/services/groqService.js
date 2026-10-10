@@ -8,7 +8,7 @@ function getGroqClient() {
   return groqClient;
 }
 
-const VISION_MODEL = process.env.GROQ_VISION_MODEL || "meta-llama/llama-4-scout-17b-16e-instruct";
+const VISION_MODEL = process.env.GROQ_VISION_MODEL || "qwen/qwen3.8-27b";
 
 /**
  * Android uygulamasının beklediği JSON şeması. Model bu şemaya göre yanıt vermeye
